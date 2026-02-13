@@ -1,0 +1,121 @@
+.page {
+    min-height: 100vh;
+}
+
+.pageBanner {
+    position: relative;
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    background: radial-gradient(ellipse at center, #1a1a2e 0%, #050505 100%);
+    overflow: hidden;
+}
+
+.bannerTitle,
+.bannerSubtitle {
+    position: relative;
+    z-index: 2;
+}
+
+.bannerTitle {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .bannerTitle {
+        font-size: 3.5rem;
+    }
+}
+
+.bannerSubtitle {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.contentSection {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+}
+
+/* Table */
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: rgba(255, 215, 0, 0.08);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
+.table td {
+    padding: 0.85rem 1.5rem;
+    color: #bbb;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.topThree {
+    background: rgba(255, 215, 0, 0.03) !important;
+}
+
+.posCell {
+    font-size: 1.1rem;
+}
+
+.posHighlight {
+    font-size: 1.3rem;
+}
+
+.posNormal {
+    color: #888;
+    font-weight: 600;
+}
+
+.playerName {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.tdHighlight {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+.disclaimer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.disclaimer p {
+    color: #888;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer p:last-child {
+    margin-bottom: 0;
+}

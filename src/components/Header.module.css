@@ -1,0 +1,257 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Top Contact Bar */
+.topBar {
+    background: linear-gradient(90deg, #1a1400 0%, #2a1f00 50%, #1a1400 100%);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+}
+
+.topBarInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.topLinks {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.topLinks a {
+    color: #b0b0b0;
+    transition: color 0.2s;
+    font-weight: 400;
+}
+
+.topLinks a:hover {
+    color: var(--primary);
+}
+
+.topContact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #d0d0d0;
+    transition: color 0.2s;
+}
+
+.contactItem:hover {
+    color: var(--primary);
+}
+
+/* Main Navigation */
+.nav {
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.6rem 0;
+}
+
+.navInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.logoIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.6rem;
+    line-height: 1;
+}
+
+.logoCrown {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.logoText {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.logoFull {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: none;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.desktopNav {
+    display: none;
+    gap: 0.1rem;
+}
+
+.navLink {
+    color: #d0d0d0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.navLink:hover {
+    color: var(--primary);
+    background: rgba(255, 215, 0, 0.08);
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.joinBtn {
+    padding: 0.55rem 1.5rem;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.joinBtn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+.menuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.menuBtn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(5, 5, 5, 0.97);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    z-index: 99;
+    padding: 2rem;
+}
+
+.mobileLink {
+    font-size: 1.25rem;
+    color: #d0d0d0;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.mobileLink:hover {
+    color: var(--primary);
+    background: rgba(255, 215, 0, 0.08);
+}
+
+.mobileJoinBtn {
+    margin-top: 1rem;
+    padding: 0.75rem 3rem;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.mobileJoinBtn:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .desktopNav {
+        display: flex;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .logoFull {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .topBar {
+        display: none;
+    }
+}
