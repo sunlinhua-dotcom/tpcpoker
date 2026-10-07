@@ -19,7 +19,7 @@ from PIL import Image
 from io import BytesIO
 
 # ===== 配置 =====
-API_KEY = "***REMOVED***"
+API_KEY = os.environ["APIYI_API_KEY"]
 MODEL = "gemini-3-pro-image-preview-2k"
 BASE_URL = "https://api.apiyi.com"
 
